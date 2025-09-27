@@ -1,4 +1,5 @@
-package scr;
+package scr.estruturas;
+
 public class FilaImpressao {
     private Fila fila;
 
@@ -6,15 +7,15 @@ public class FilaImpressao {
         fila = new Fila(capacidade);
     }
 
-    public void adicionar(Documento d) {
-        fila.enfileirar(d);
-        System.out.println("Adicionado: " + d);
+    public void adicionar(Documento doc) {
+        fila.enfileirar(doc);
+        System.out.println("Adicionado: " + doc);
     }
 
     public void imprimir() {
-        Documento d = fila.desenfileirar();
-        if (d != null) {
-            System.out.println("Imprimindo -> " + d);
+        Documento doc = fila.desenfileirar();
+        if (doc != null) {
+            System.out.println("\nImprimindo:  " + doc + "\n");
         } else {
             System.out.println("Nada para imprimir.");
         }

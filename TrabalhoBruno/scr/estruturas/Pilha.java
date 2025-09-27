@@ -1,6 +1,7 @@
-package scr;
+package scr.estruturas;
+
 public class Pilha {
-    
+
     private String[] itens;
     private int topo;
 

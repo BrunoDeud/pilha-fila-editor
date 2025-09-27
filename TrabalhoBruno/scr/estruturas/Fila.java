@@ -1,4 +1,5 @@
-package scr;
+package scr.estruturas;
+
 public class Fila {
 
     private Documento[] docs;
@@ -50,7 +51,7 @@ public class Fila {
             System.out.println("Fila vazia.");
             return;
         }
-        
+
         System.out.print("Na fila: ");
         for (int i = 0; i < qtd; i++) {
             int pos = (inicio + i) % docs.length;

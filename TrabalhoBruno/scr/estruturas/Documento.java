@@ -1,4 +1,5 @@
-package scr;
+package scr.estruturas;
+
 public class Documento {
 
     private String nome;
@@ -15,5 +16,10 @@ public class Documento {
 
     public int getTamanho() {
         return tamanho;
+    }
+
+    @Override
+    public String toString() {
+        return "Documento: " + nome + " (" + tamanho + " KB)";
     }
 }
