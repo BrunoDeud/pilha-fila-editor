@@ -27,6 +27,3 @@ Aqui foram implementados:
 - `mostrarFila` → exibe os documentos na fila.  
 
 ---
-
-## 📂 Estrutura do projeto
-
