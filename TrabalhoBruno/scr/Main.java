@@ -15,11 +15,12 @@ public class Main {
     public static void testarEditorDeTexto() {
         EditorTexto editor = new EditorTexto(10);
 
+        System.out.println("\n Teste simples \n");
         editor.refazer();
+        editor.desfazer();
         editor.inserir("Olá");
         editor.inserir(" Bruno");
         editor.desfazer();
-        editor.inserir(" Bruno");
         editor.refazer();
         editor.inserir("!!!");
         editor.desfazer();
@@ -27,18 +28,19 @@ public class Main {
         editor.desfazer();
         editor.desfazer();
         editor.desfazer();
-        editor.desfazer();
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
-        editor.inserir("texto");
+
+        System.out.println("\n Testando limite de historico \n");
+        editor.inserir("1");
+        editor.inserir("2");
+        editor.inserir("3");
+        editor.inserir("4");
+        editor.inserir("5");
+        editor.inserir("6");
+        editor.inserir("7");
+        editor.inserir("8");
+        editor.inserir("9");
+        editor.inserir("10");
+        editor.inserir("nao deveria ser imprimido");
     }
 
     public static void testarFilaDeImpressao() {
